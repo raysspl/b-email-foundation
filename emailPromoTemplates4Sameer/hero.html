@@ -4,6 +4,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width"/>
+
+  <title>Bridg Emails</title>
+
 	<style>
 /**********************************************
 * Ink v1.0.5 - Copyright 2013 ZURB Inc        *
@@ -99,7 +102,8 @@ hr {
 table.body {
   height: 100%;
   width: 100%;
-  background-image: url(https://scontent-b-lax.xx.fbcdn.net/hphotos-frc3/t1.0-9/1374924_648610828520035_3815898274901313308_n.png); 
+  /*background-image: url(https://scontent-b-lax.xx.fbcdn.net/hphotos-frc3/t1.0-9/1374924_648610828520035_3815898274901313308_n.png);*/ 
+  background: url(img/patinagray.png);
   background-size: cover; }
 }
 
@@ -148,6 +152,7 @@ td.sub-column, td.sub-columns {
 table.row td.last,
 table.container td.last {
   padding-right: 0px;
+  padding-left: 8px;
 }
 
 table.one { width: 30px; }
@@ -250,6 +255,8 @@ table.columns .text-pad-right,
 table.column .right-text-pad,
 table.column .text-pad-right {
   padding-right: 10px;
+  /*padding-left: 10px;*/
+  /*float: right;*/
 }
 
 /* Block Grid */
@@ -591,8 +598,8 @@ body.outlook p {
 @media only screen and (max-width: 600px) {
 
   table[class="body"] img {
-    width: auto !important;
-    height: auto !important;
+    /*width: auto !important;
+    height: auto !important;*/
   }
 
   table[class="body"] center {
@@ -695,6 +702,16 @@ body.outlook p {
   table[class="body"] .hide-for-desktop {
     display: inherit !important;
   }
+
+  /*img.insta, .fb, .twttr {
+    width: 70px !important;
+    display: inline;
+  }*/
+
+  img.locator {
+    width: 30px !important;
+    display: inline;
+  }
 }
 
   </style>
@@ -740,11 +757,12 @@ body.outlook p {
 
     .header {
       /*background: #999999;*/
-      background-image: url(http://lovelanekitchen.com/wp-content/uploads/2013/03/LLK_Chalkboard-background.jpg);
+      /*background: url(http://lovelanekitchen.com/wp-content/uploads/2013/03/LLK_Chalkboard-background.jpg);*/
+      background: url(img/Chalkboard.png);
     }
 
-    .footer .wrapper {
-      background: #ebebeb;
+    .footer .wrapper {  
+      /*background: #ebebeb;*/
     }
 
     .footer h5 {
@@ -773,6 +791,11 @@ body.outlook p {
       table[class="body"] .left-text-pad {
         padding-right: 10px !important;
       }
+
+      img.locator {
+        width: 30px !important;
+        display: inline;
+      }
     }
 
   /*additional styling*/
@@ -785,6 +808,21 @@ body.outlook p {
   text-align: center;
   /*margin-top: 50px;*/
   } 
+
+  a.insta1, .fb1, .twttr1 {
+    display: inline;
+  }
+
+  img.locator {
+    width: 30px !important;
+    display: inline;
+  }
+
+  img.insta, .fb, .twttr {
+    width: 70px !important;
+    display: inline;
+    text-align: center;
+  }
 
   </style>
 </head>
@@ -811,7 +849,10 @@ body.outlook p {
                               <img src="http://ecinity-static.s3-website-us-west-1.amazonaws.com/1845/1695/77568/logo.png"/>
                             </td>
                             <td class="six sub-columns last" align="right" style="text-align:right; vertical-align:middle;">
-                              <span class="template-label"><i class="fa fa-map-marker fa-3x" style="color: white; margin-right: 5px;"></i>MOOYAH! LOCATOR</span>
+                              
+                              <span class="template-label"><a href="#" style="color: white;"><img src="img/redlocator.png" class="locator">CLICK HERE FOR THE NEAREST MOOYAH!</a></span>  
+
+                              <!-- <span class="template-label"><i class="fa fa-map-marker fa-3x" style="color: white; margin-right: 5px;"></i>MOOYAH! LOCATOR</span> -->
                             </td>
                             <td class="expander"></td>
 
@@ -852,25 +893,6 @@ body.outlook p {
                   </tr>
                 </table>
 
-                <!-- <table class="row callout">
-                  <tr>
-                    <td class="wrapper last">
-
-                      <table class="twelve columns">
-                        <tr>
-                          <td class="panel">
-
-                            <p>Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. <a href="#">Click it! »</a></p>
-
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
-                  </tr>
-                </table> -->
-
                 <table class="row">
                   <tr>
                     <td class="wrapper last">
@@ -903,7 +925,7 @@ body.outlook p {
                             <table class="button">
                               <tr>
                                 <td>
-                                  <a href="#">Click Me!</a>
+                                  <a href="#">Let's Win!</a>
                                 </td>
                               </tr>
                             </table>
@@ -917,10 +939,6 @@ body.outlook p {
                   </tr>
                 </table>
 
-
-                
-
-
                 <table class="row">
                   <tr>
                     <td class="wrapper last">
@@ -930,9 +948,99 @@ body.outlook p {
                           <td align="center">
                             <center>
                               <p style="text-align:center;">
-                              <a href="#"><i class="fa fa-facebook fa-4x" style="color: black; padding: 0 3%;"></i></a>  
+                              
+                              <!-- because we can't use display:inline element for freakin' microsoft outlook -->
+                              <!-- <a href="#" class="insta1"><img style="display: inline;" src="img/blackinstagram.png" class="insta"> yooo </a>
+                              <a href="#" class="fb1"><img style="display: inline;" src="img/blackfacebook.png" class="fb"> suuup </a>
+                              <a href="#" class="twttr1"><img style="display: inline;" src="img/blacktwitter.png" class="twttr"> holler </a> -->
+                              
+                              <!-- font-awesome doesn't render in all email client especially in microsoft outlook -->
+                              <!-- <a href="#"><i class="fa fa-facebook fa-4x" style="color: black; padding: 0 3%;"></i></a>  
                               <a href="#"><i class="fa fa-twitter fa-4x" style="color: black; padding: 0 3%;"></i></a>  
-                              <a href="#"><i class="fa fa-instagram fa-4x" style="color: black; padding: 0 3%;"></i></a>
+                              <a href="#"><i class="fa fa-instagram fa-4x" style="color: black; padding: 0 3%;"></i></a> -->
+
+                              
+
+                              </p>
+                            </center>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+
+                      <table class="row footer">
+                        <tr>
+                          <td class="wrapper">
+
+                            <table class="six columns">
+                              <tr>
+                                <td class="left-text-pad">
+
+                                  <h6>Connect With Us:</h6>
+
+                                  <table class="tiny-button facebook">
+                                    <tr>
+                                      <td>
+                                        <a href="#">Facebook</a>
+                                      </td>
+                                    </tr>
+                                  </table>
+
+                                  <br>
+
+                                  <table class="tiny-button twitter">
+                                    <tr>
+                                      <td>
+                                        <a href="#">Twitter</a>
+                                      </td>
+                                    </tr>
+                                  </table>
+
+                                  <br>
+
+                                  <table class="tiny-button google-plus">
+                                    <tr>
+                                      <td>
+                                        <a href="#">Google +</a>
+                                      </td>
+                                    </tr>
+                                  </table>
+
+                                </td>
+                                <td class="expander"></td>
+                              </tr>
+                            </table>
+
+                          </td>
+                          <td class="wrapper last">
+
+                            <table class="six columns">
+                              <tr>
+                                <td class="last right-text-pad">
+                                  <h6>Contact Info:</h6>
+                                  <p><b>Asana Bridg</b></p>
+                                  <p>Phone: <b>408.341.0600</b></p>
+                                  <p>Email: <a href="mailto:hseldon@trantor.com"><b>hseldon@trantor.com</b></a></p>
+                                </td>
+                                <td class="expander"></td>
+                              </tr>
+                            </table>
+
+                          </td>
+                        </tr>
+                      </table>
+                      <br>
+
+                      <table class="twelve columns">
+                        <tr>
+                          <td align="center">
+                            <center>
+                              <p style="text-align:center;">
+                              
+                              
+
+                              <a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Unsubscribe</a></p>  
+
                             </center>
                           </td>
                           <td class="expander"></td>
@@ -954,3 +1062,4 @@ body.outlook p {
 	</table>
 </body>
 </html>
+
