@@ -3,9 +3,8 @@
 <head>
 <!-- If you delete this tag, the sky will fall on your head -->
 <meta name="viewport" content="width=device-width" />
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Bridg Emails</title>
 	
 <!-- <link rel="stylesheet" type="text/css" href="stylesheets/email.css" /> -->
@@ -29,13 +28,15 @@ img {
 	padding:0;
 	color: white;
 }
+a.noline {
+	text-decoration: none;
+	color: white;	
+}
 body {
 	-webkit-font-smoothing:antialiased; 
 	-webkit-text-size-adjust:none; 
 	width: 100%!important; 
 	height: 100%;
-	/*background-image: url(http://www.bridg.com/wp-content/themes/bridg/images/email/bg.jpg);
-	background-size: cover;*/
 }
 
 
@@ -47,24 +48,20 @@ a { color: #2BA6CB;}
 .btn {
 	text-decoration:none;
 	color: #FFF;
-	background-color: #01DF01;
+	background-color: #01df01;
 	padding:10px 16px;
 	font-weight:bold;
 	margin-right:10px;
 	text-align:center;
 	cursor:pointer;
 	display: inline-block;
-	border-radius: 5px;
-}
-
-.heroimg {
-	width: 100%;
+	border-radius: 3px;
 }
 
 p.callout {
-	padding: 15px 20px 15px 15px;
-	background-color:#A9F5F2;
-	margin-bottom: 15px;
+	/*padding:15px;*/
+	background-color:#ECF8FF;
+	/*margin-bottom: 15px;*/
 }
 .callout a {
 	font-weight:bold;
@@ -98,7 +95,7 @@ a.ms { background-color: #000!important; }
 /* ------------------------------------- 
 		HEADER 
 ------------------------------------- */
-table.head-wrap { width: 100%; border-bottom: 2px solid #e6e6e6; background-image: url(http://lovelanekitchen.com/wp-content/uploads/2013/03/LLK_Chalkboard-background.jpg); /*background-image: url(https://scontent-b-lax.xx.fbcdn.net/hphotos-frc3/t1.0-9/1374924_648610828520035_3815898274901313308_n.png);*/ /*background-image: url(https://scontent-b-lax.xx.fbcdn.net/hphotos-frc3/t1.0-9/1374924_648610828520035_3815898274901313308_n.png); background-size:*/ cover; /*width: 100%;*/ }
+table.head-wrap { width: 100%;}
 
 .header.container table td.logo { padding: 15px; }
 .header.container table td.label { padding: 15px; padding-left:0px;}
@@ -107,13 +104,13 @@ table.head-wrap { width: 100%; border-bottom: 2px solid #e6e6e6; background-imag
 /* ------------------------------------- 
 		BODY 
 ------------------------------------- */
-table.body-wrap { width: 100%; /*background-image: url(https://scontent-b-lax.xx.fbcdn.net/hphotos-frc3/t1.0-9/1374924_648610828520035_3815898274901313308_n.png);*/ background-image: url(https://scontent-b-lax.xx.fbcdn.net/hphotos-frc3/t1.0-9/1374924_648610828520035_3815898274901313308_n.png); background-size: cover; }
+table.body-wrap { width: 100%;}
 
 
 /* ------------------------------------- 
 		FOOTER 
 ------------------------------------- */
-table.footer-wrap { width: 100%;	clear:both!important; border-top: 2px solid #e6e6e6; /*background: #e6e6e6;*/ background-image: url(http://lovelanekitchen.com/wp-content/uploads/2013/03/LLK_Chalkboard-background.jpg); /*background-size: cover;*/ width: 100%; color: white;
+table.footer-wrap { width: 100%;	clear:both!important; /*margin: 20px 0px 20px 0px;*/ padding: 25px 0px 25px 20px;
 }
 .footer-wrap .container td.content  p { border-top: 1px solid rgb(215,215,215); padding-top:15px;}
 .footer-wrap .container td.content p {
@@ -192,14 +189,12 @@ ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.s
 	max-width:600px!important;
 	margin:0 auto!important; /* makes it centered */
 	clear:both!important;
-	/*background-image: url(https://scontent-b-lax.xx.fbcdn.net/hphotos-frc3/t1.0-9/1374924_648610828520035_3815898274901313308_n.png);*/
-	background-size: cover;
 }
 
 /* This should also be a block element, so that it will fill 100% of the .container */
 .content {
 	/*padding:15px;*/
-	max-width:610px;
+	max-width:600px;
 	margin:0 auto;
 	display:block; 
 }
@@ -230,10 +225,138 @@ ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.s
 .clear { display: block; clear: both; }
 
 /* ----------- Bridg email mods by Ray Dipasupil ----------------*/
+img.headrimg {
+	margin-left: -15px;
+}
+
 section {
 	max-width: 580px;
 	padding: 20px 10px 0px 10px;
 	/*border: 2px solid red;*/
+}
+
+img.locator {
+	width: 30px !important;
+	display: inline;
+	text-decoration: none;
+}
+
+img.heroimg {
+	margin-top: -4px;
+	margin-bottom: 0px;
+}
+
+p.mainpg {
+	font-size: 16px;
+
+}
+
+/* Buttons */
+
+table.button,
+table.tiny-button,
+table.small-button,
+table.medium-button,
+table.large-button {
+  overflow: hidden;
+}
+
+table.button td,
+table.tiny-button td,
+table.small-button td,
+table.medium-button td,
+table.large-button td {
+  display: block;
+  width: 225px !important;
+  text-align: center;
+  background: #01df01;
+  border: 1px solid #2284a1;
+  color: #ffffff;
+  padding: 8px 0;
+  border-radius: 3px;
+}
+
+table.tiny-button td {
+  padding: 5px 0 4px;
+}
+
+table.small-button td {
+  padding: 8px 0 7px;
+}
+
+table.medium-button td {
+  padding: 12px 0 10px;
+}
+
+table.large-button td {
+  padding: 21px 0 18px;
+}
+
+table.button td a,
+table.tiny-button td a,
+table.small-button td a,
+table.medium-button td a,
+table.large-button td a {
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+table.tiny-button td a {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+table.small-button td a {
+  font-size: 16px;
+}
+
+table.medium-button td a {
+  font-size: 20px;
+}
+
+table.large-button td a {
+  font-size: 24px;
+}
+
+table.button:hover td,
+table.button:visited td,
+table.button:active td {
+  background: #2795b6 !important;
+}
+
+table.button:hover td a,
+table.button:visited td a,
+table.button:active td a {
+  color: #fff !important;
+}
+
+table.button:hover td,
+table.tiny-button:hover td,
+table.small-button:hover td,
+table.medium-button:hover td,
+table.large-button:hover td {
+  background: #2795b6 !important;
+}
+
+table.button:hover td a,
+table.button:active td a,
+table.button td a:visited,
+table.tiny-button:hover td a,
+table.tiny-button:active td a,
+table.tiny-button td a:visited,
+table.small-button:hover td a,
+table.small-button:active td a,
+table.small-button td a:visited,
+table.medium-button:hover td a,
+table.medium-button:active td a,
+table.medium-button td a:visited,
+table.large-button:hover td a,
+table.large-button:active td a,
+table.large-button td a:visited {
+  color: #ffffff !important; 
 }
 
 /*------------ Bridg social buttons by Ray Dipasupil ---------------------*/
@@ -251,12 +374,8 @@ ul.social-buttons {
   margin: 0 10px;
 }*/
 
-img {
-	max-width: 100%;
-	margin: 0 0;
-}
-
-img.ray-twitter, .ray-facebook, .ray-instagram {
+img.ray-twitter, .ray-facebook, .ray-instagram, .ray-pinterest {
+	max-width: 40px;
 	margin: 0 3%;
 }
 
@@ -274,38 +393,40 @@ img.ray-twitter, .ray-facebook, .ray-instagram {
 	table.social div[class="column"] {
 		width:auto!important;
 	}
+
+  table.button td,
+	table.tiny-button td,
+	table.small-button td,
+	table.medium-button td,
+	table.large-button td {
+	  width: 225px !important;
+	}
 }
 </style>
 
 
 </head> 
 
-<!-- <body bgcolor="#FFFFFF"> -->
-<body>
+<body bgcolor="#FFFFFF">
 
 <!-- HEADER -->
-<!-- <table class="head-wrap" bgcolor="#e6e6e6"> -->
-	<table class="head-wrap">
+<table class="head-wrap" bgcolor="#585858">
 	<tr>
 		<td></td>
 		<td class="header container">
 			
 				<div class="content">
-					<!-- <table bgcolor="#e6e6e6"> -->
-					<table>
+					<table bgcolor="#585858">
 					<tr>
-						<td><img src="http://ecinity-static.s3-website-us-west-1.amazonaws.com/1845/1695/77568/logo.png"/></td>
-						<td align="right"><h6 class="collapse"><i class="fa fa-map-marker fa-3x" style="color: white; margin-right: 5px;"></i>MOOYAH! LOCATOR <!-- <i class="fa fa-map-marker fa-3x" style="color: white; margin-right: 5px;"></i> --> </h6></td>
-						
+						<td><a href="#"><img src="http://ecinity-static.s3-website-us-west-1.amazonaws.com/1845/1695/77568/logo.png" class="headrimg"/></a></td>
+						<td align="right"><span><a href="#" class="noline"><img src="http://bridg.com/wp-content/uploads/2014/04/worldwide-location-32.png" class="locator"><h6 class="collapse">MOOYAH! LOCATOR</h6></a></span></td>
 					</tr>
 				</table>
 				</div>
-					
+				
 		</td>
 		<td></td>
-
 	</tr>
-
 </table><!-- /HEADER -->
 
 
@@ -313,7 +434,7 @@ img.ray-twitter, .ray-facebook, .ray-instagram {
 <table class="body-wrap">
 	<tr>
 		<td></td>
-		<td class="container" bgcolor="#F2F2F2">
+		<td class="container" bgcolor="#FFFFFF">
 
 			<div class="content">
 			<table>
@@ -324,33 +445,54 @@ img.ray-twitter, .ray-facebook, .ray-instagram {
 						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p> -->
 						
 						<!-- A Real Hero (and a real human being) -->
-						<p><img src="http://ecinity-static.s3-website-us-west-1.amazonaws.com/1845/1695/77569/body_image.png" class="heroimg" /></p><!-- /hero -->
+						<p><img src="http://ecinity-static.s3-website-us-west-1.amazonaws.com/1845/1695/77569/body_image.png" class="heroimg" width="596px" /></p><!-- /hero -->
 						
 						<!-- Callout Panel -->
 						<section>
-							<!-- <p class="callout"> -->
-								<!-- <b>Help us become Champs! Share the love on Facebook! <a href="#">Do it Now! &raquo;</a><b> -->
-							<!-- </p> --><!-- /Callout Panel -->
 							
-							<!-- <h3>Let's win!<small> Together.</small></h3> -->
-							<p style="font-size: 18px;">Remember to vote for us daily! Every little bit of help matters a lot. Share  your votes on Facebook & encourage others to vote for Mooyah! If we win, we'll be giving a lot of burgers for free. Now who wouldn't want that?</p>
-							<a class="btn">Let's Win!</a>
+							<!-- <h3>Title Ipsum <small>This is a note.</small></h3> -->
+							<p class="mainpg">Remember to vote for us daily! Every little bit of help matters a lot. Share your votes on Facebook & encourage others to vote for Mooyah! If we win, we'll be giving a lot of burgers for free. Now who wouldn't want that?</p>
+							<!-- <a class="btn">Click Me!</a> -->
+
+							<table class="row">
+                  <tr>
+                    <td class="wrapper last">
+
+                      <table class="three columns" >
+                        <tr>
+                          <td>
+
+                            <table class="button">
+                              <tr align="right">
+                                <td align="right">
+                                  <a href="#">Let's Win Together!</a>
+                                </td>
+                              </tr>
+                            </table>
+
+                          </td>
+                        	<td class="expander"></td>
+                      	</tr>
+                    	</table>
+
+                  </td>
+                </tr>
+              </table>
 													
 							<br/>
 							<br/>
 						</section>								
 												
 						<!-- social -->
-							
-							<!-- <ul class="social-buttons" id="demo"> -->
+							<ul class="social-buttons" id="demo">
 							  <!-- <li> --> <!-- Because list items render wack on Microsoft Outlook [works well in other email clients, though]. Yes, super lame. You'd think that with a company so flushed with cash they'd allocate a tiny amount for modern web standards, but alas. -->
-							    <!-- <img src="http://armsaroundthechild.org/wp-content/themes/boowp-aatc/img/twitter-icon-ow-v1-70x70.gif" class="ray-twitter"> -->
+							    <!-- <a href="#"><img src="http://armsaroundthechild.org/wp-content/themes/boowp-aatc/img/twitter-icon-ow-v1-70x70.gif" class="ray-twitter"></a> -->
 							  <!-- </li>
 							  <li> -->
-							    <!-- <img src="http://nordiclarp.org/facebook_70x70.png" class="ray-facebook"> -->
+							    <!-- <a href="#"><img src="http://nordiclarp.org/facebook_70x70.png" class="ray-facebook"></a> -->
 							  <!-- </li>
 							  <li> -->
-							    <!-- <img src="http://www.nottingham.ac.uk/Connect/images-multimedia/instagram-icon-Cropped-70x70.png" class="ray-instagram"> -->
+							    <!-- <a href="#"><img src="http://www.fuelyourventure.com/files/instagram-70x70.png" class="ray-instagram"></a> -->
 							  <!-- </li> -->
 							</ul>
 						<!-- /social -->
@@ -366,18 +508,17 @@ img.ray-twitter, .ray-facebook, .ray-instagram {
 	</tr>
 </table><!-- /BODY -->
 
-<!-- FOOTER -->
-<table class="footer-wrap">
+<!-- FOOTER v1-->
+<!-- <table class="footer-wrap">
 	<tr>
 		<td></td>
 		<td class="container">
 			
-				<!-- content -->
-				<!-- <div class="content">
+				<div class="content">
 				<table>
 				<tr>
 					<td align="center">
-						<p><b>Mooyah!</b></p>
+						<p><b>Hungry Howie's Pizza</b></p>
 						<p>11390 West Olympic Blvd., Los Angeles, CA 90034</p>
 						<p>1-800-432-5765</p>
 						<p>
@@ -389,30 +530,64 @@ img.ray-twitter, .ray-facebook, .ray-instagram {
 					</td>
 				</tr>
 			</table>
-			</div> --><!-- /content -->
-
-			<div class="content">
-				<br>
-				<ul class="social-buttons" id="demo">
-							  <!-- <li> --> <!-- Because list items render wack on Microsoft Outlook [works well in other email clients, though]. Yes, super lame. You'd think that with a company so flushed with cash they'd allocate a tiny amount for modern web standards, but alas. -->
-							    <!-- <img src="http://www.thepequod.org.uk/graphics/twitter.png" class="ray-twitter"> -->
-							    <a href="#"><i class="fa fa-facebook fa-4x" style="color: white; padding: 0 3%;"></i></a>
-							  <!-- </li>
-							  <li> -->
-							    <!-- <img src="http://www.rexhealth.com/images/Services/blood/facebook_icon_40x40.png" class="ray-facebook"> -->
-							    <a href="#"><i class="fa fa-twitter fa-4x" style="color: white; padding: 0 3%;"></i></a>
-							  <!-- </li>
-							  <li> -->
-							    <!-- <img src="http://www.whitehousebrothers.com/modules/blocksocialnetworks/img/instagram.png" class="ray-instagram"> -->
-							    <a href="#"><i class="fa fa-instagram fa-4x" style="color: white; padding: 0 3%;"></i></a>
-							  <!-- </li> -->
-							</ul>
-			</div>
+				</div>
 				
 		</td>
 		<td></td>
 	</tr>
-</table><!-- /FOOTER -->
+</table> --><!-- /FOOTER v1-->
+
+<!-- FOOTER v2 -->
+<table class="head-wrap footer-wrap" bgcolor="#585858">
+	<tr>
+		<td></td>
+		<td class="header container">
+			
+				<div class="content">
+					<table bgcolor="#585858">
+					<tr>
+						
+						<table>
+						<tr>
+						<td align="center">
+						<ul class="social-buttons" id="demo">
+							  <!-- <li> --> <!-- Because list items render wack on Microsoft Outlook [works well in other email clients, though]. Yes, super lame. You'd think that with a company so flushed with cash they'd allocate a tiny amount for modern web standards, but alas. -->
+							    <!-- <a href="#"><img src="http://armsaroundthechild.org/wp-content/themes/boowp-aatc/img/twitter-icon-ow-v1-70x70.gif" class="ray-twitter"></a> -->
+							    <a href="#"><img src="http://bridg.com/wp-content/uploads/2014/04/twitter-48.png" class="ray-twitter"></a>
+							  <!-- </li>
+							  <li> -->
+							    <!-- <a href="#"><img src="http://nordiclarp.org/facebook_70x70.png" class="ray-facebook"></a> -->
+							    <a href="#"><img src="http://bridg.com/wp-content/uploads/2014/04/facebook-48.png" class="ray-facebook"></a>
+							  <!-- </li>
+							  <li> -->
+							    <!-- <a href="#"><img src="http://www.fuelyourventure.com/files/instagram-70x70.png" class="ray-instagram"></a> -->
+							    <a href="#"><img src="http://bridg.com/wp-content/uploads/2014/04/instagram-48.png" class="ray-instagram"></a>
+							  <!-- </li> -->
+							  	<a href="#"><img src="http://bridg.com/wp-content/uploads/2014/04/pinterest-5-48.png" class="ray-pinterest"></a>
+						</ul>
+						<!-- <p><b>Hungry Howie's Pizza</b></p>
+						<p>11390 West Olympic Blvd., Los Angeles, CA 90034</p>
+						<p>1-800-432-5765</p> -->
+						<p>
+							<a href="#" class="noline">Terms</a> |
+							<!-- <a href="#" class="noline">Privacy</a> | -->
+							<a href="#" class="noline">Franchise Info</a> |
+							<a href="#" class="noline">Gift Cards</a> |
+							<a href="#" class="noline">Fundraising</a> |
+							<a href="#" class="noline"><unsubscribe>Unsubscribe</unsubscribe></a>
+						</p>
+						</td>
+						</tr>
+						</table>
+
+					</tr>
+				</table>
+				</div>
+				
+		</td>
+		<td></td>
+	</tr>
+</table><!-- /FOOTER v2 -->
 
 </body>
 </html>
